@@ -1,0 +1,7 @@
+C:\Users\Test\source\repos\c#_practive\c#_practive\bin\Debug\c#_practive.exe.config
+C:\Users\Test\source\repos\c#_practive\c#_practive\bin\Debug\c#_practive.exe
+C:\Users\Test\source\repos\c#_practive\c#_practive\bin\Debug\c#_practive.pdb
+C:\Users\Test\source\repos\c#_practive\c#_practive\obj\Debug\c#_practive.csproj.AssemblyReference.cache
+C:\Users\Test\source\repos\c#_practive\c#_practive\obj\Debug\c#_practive.csproj.CoreCompileInputs.cache
+C:\Users\Test\source\repos\c#_practive\c#_practive\obj\Debug\c#_practive.exe
+C:\Users\Test\source\repos\c#_practive\c#_practive\obj\Debug\c#_practive.pdb
