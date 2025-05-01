@@ -11,46 +11,64 @@ namespace c__practive
     {
         static void Main(string[] args)
         {
-            double num1, num2;
-            while (true)
-            {
-                try
+
+            //Multi-Dimensional-Array
+
+            String[] ford = { "Mustang", "F-150", "Explorer" };
+            String[] chevy = { "Corvette", "Camarao", "Silvarodo" };
+            String[] toyota = { "Corolla", "Camry", "Rav4" };
+
+            String[,] cars =  { { "Mustang", "F-150", "Explorer" },
+                              { "Corvette", "Camarao", "Silvarodo" },
+                { "Corolla", "Camry", "Rav4" }
+            };
+
+            foreach(String eachCar in cars)
                 {
-                    Console.WriteLine("Enter Number 1");
-                    if(!double.TryParse(Console.ReadLine(),out num1))
-                        {
-                            Console.WriteLine("Please enter valid number");
-                        continue;
-                        }
-
-                    Console.WriteLine("Enter Number 2");
-
-                    if(!double.TryParse(Console.ReadLine(),out num2))
-                    {
-                        Console.WriteLine("Please enter valid number");
-                        continue;
-                    }
-
-                    if(num2 == 0)
-                    {
-                        Console.WriteLine("Please enter non-zero number");
-                        continue;
-
-                    }
-
-                    double total = num1 / num2;
-
-                    Console.WriteLine($"Number 1 is {num1}");
-                    Console.WriteLine($"Number 2 is {num2}");
-
-                    Console.WriteLine($"devision result { total}");
-                    break;
+                    Console.WriteLine(eachCar);
                 }
-                catch (FormatException)
-                {
-                    Console.WriteLine("please enter correct number");
-                }
-            }
+
+            //Exceptional Handling
+            //double num1, num2;
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Enter Number 1");
+            //        if(!double.TryParse(Console.ReadLine(),out num1))
+            //            {
+            //                Console.WriteLine("Please enter valid number");
+            //            continue;
+            //            }
+
+            //        Console.WriteLine("Enter Number 2");
+
+            //        if(!double.TryParse(Console.ReadLine(),out num2))
+            //        {
+            //            Console.WriteLine("Please enter valid number");
+            //            continue;
+            //        }
+
+            //        if(num2 == 0)
+            //        {
+            //            Console.WriteLine("Please enter non-zero number");
+            //            continue;
+
+            //        }
+
+            //        double total = num1 / num2;
+
+            //        Console.WriteLine($"Number 1 is {num1}");
+            //        Console.WriteLine($"Number 2 is {num2}");
+
+            //        Console.WriteLine($"devision result { total}");
+            //        break;
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.WriteLine("please enter correct number");
+            //    }
+            //}
 
             Console.ReadKey();
 
