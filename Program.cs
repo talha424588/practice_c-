@@ -40,7 +40,10 @@ namespace c__practive
 
                     double total = num1 / num2;
 
-                    Console.WriteLine("devision result " + total);
+                    Console.WriteLine($"Number 1 is {num1}");
+                    Console.WriteLine($"Number 2 is {num2}");
+
+                    Console.WriteLine($"devision result { total}");
                     break;
                 }
                 catch (FormatException)
