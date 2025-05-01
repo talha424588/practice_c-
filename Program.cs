@@ -11,21 +11,42 @@ namespace c__practive
     {
         static void Main(string[] args)
         {
-            try
+            double num1, num2;
+            while (true)
             {
-                Console.WriteLine("Enter Number 1");
-                double num1 = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    Console.WriteLine("Enter Number 1");
+                    if(!double.TryParse(Console.ReadLine(),out num1))
+                        {
+                            Console.WriteLine("Please enter valid number");
+                        continue;
+                        }
 
-                Console.WriteLine();
-                Console.WriteLine("Enter Number 2");
-                double num2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter Number 2");
 
-                double total = num1 / num2;
+                    if(!double.TryParse(Console.ReadLine(),out num2))
+                    {
+                        Console.WriteLine("Please enter valid number");
+                        continue;
+                    }
 
-                Console.WriteLine("devision result " + total);
-            }
-            catch (FormatException) {
-                Console.WriteLine("please enter correct number");
+                    if(num2 == 0)
+                    {
+                        Console.WriteLine("Please enter non-zero number");
+                        continue;
+
+                    }
+
+                    double total = num1 / num2;
+
+                    Console.WriteLine("devision result " + total);
+                    break;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("please enter correct number");
+                }
             }
 
             Console.ReadKey();
