@@ -11,10 +11,6 @@ namespace c__practive
     {
         static void Main(string[] args)
         {
-
-            
-
-
             try
             {
                 Console.WriteLine("Enter Number 1");
